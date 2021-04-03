@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/c"
+                android:layout_width="78dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:contentDescription="c"
+                android:onClick="calcula"
+                android:text="C"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/pantalla"
+                android:layout_width="331dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:autoSizeTextType="uniform" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/uno"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:contentDescription="1"
+                android:onClick="calcula"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/dos"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:contentDescription="2"
+                android:onClick="calcula"
+                android:text="2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/tres"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:contentDescription="3"
+                android:onClick="calcula"
+                android:text="3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:contentDescription="div"
+                android:onClick="calcula"
+                android:text="/"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="401dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cuatro"
+                android:layout_width="0dp"
+                android:layout_height="112dp"
+                android:layout_weight="1"
+                android:contentDescription="4"
+                android:onClick="calcula"
+                android:text="4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cinco"
+                android:layout_width="0dp"
+                android:layout_height="112dp"
+                android:layout_weight="1"
+                android:contentDescription="5"
+                android:onClick="calcula"
+                android:text="5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/seis"
+                android:layout_width="0dp"
+                android:layout_height="112dp"
+                android:layout_weight="1"
+                android:contentDescription="6"
+                android:onClick="calcula"
+                android:text="6"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/multiplicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="112dp"
+                android:contentDescription="x"
+                android:onClick="calcula"
+                android:text="x"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/siete"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:contentDescription="7"
+                android:onClick="calcula"
+                android:text="7"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/ocho"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:contentDescription="8"
+                android:onClick="calcula"
+                android:text="8"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/nueve"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:contentDescription="9"
+                android:onClick="calcula"
+                android:text="9"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/resta"
+                android:layout_width="102dp"
+                android:layout_height="104dp"
+                android:contentDescription="-"
+                android:onClick="calcula"
+                android:text="-"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cero"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:contentDescription="0"
+                android:onClick="calcula"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/punto"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:contentDescription="."
+                android:onClick="calcula"
+                android:text="."
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/igual"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:contentDescription="="
+                android:onClick="calcula"
+                android:text="="
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/suma"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:contentDescription="+"
+                android:onClick="calcula"
+                android:text="+"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
